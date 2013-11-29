@@ -5,7 +5,12 @@
     <title>Users</title>
   </head>
   <body>
-    <div id="breadcrumbs"><a href="home.html">Home</a> &gt; Users</div>
+    <div id="breadcrumbs">
+      <a href="home.html">Home</a>
+      Users
+      <a href="websites.html">Websites</a>
+      <a href="activity.html">Activity</a>
+    </div>
     <div id="users">
       <div id="user1">User1</div>
       <div id="user2">User2</div>
@@ -14,7 +19,6 @@
     </div>
     <div id="profile">
       <img id="profilepicture">
-      <button id="changepassword">Change Password</button><br>
       <table border=1>
         <thead>
         </thead>
@@ -23,8 +27,20 @@
           <tr><td>Email</td><td><input type="email"></input></td></tr>
           <tr><td>Phone</td><td><input type="phone"></input></td></tr>
           <tr><td>Address</td><td><textarea id="address"></textarea></td></tr>
+          <tr>
+            <td>Sites</td>
+            <td>
+              <select multiple size="5">
+              <option>www.ExampleOne.com </option>
+              <option>www.ExampleTwo.com</option>
+              <option>...</option>
+              </select>
+            </td>
+          </tr>
         </tbody>
+      </table>
       <button id="save">Save</button>
+      <button id="changepassword">Change Password</button><br>
     </div>
   </body>
 </html>
