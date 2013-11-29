@@ -9,10 +9,10 @@ body, html {
   margin:0 auto;
   background: #fddbc0;
 }
-#breadcrumbs {
+header {
   background: #d1d1d9;
 }
-#icons,
+.icon,
 #search {
   text-align: center;
 }
