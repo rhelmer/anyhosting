@@ -2,15 +2,15 @@ body, html {
   margin: 0;
   padding: 0;
   color: #000;
-  background: #a7a09a;
+  background: #8ab5a2;
 }
 #wrap {
   width 750px;
   margin:0 auto;
-  background: #99c;
+  background: #fddbc0;
 }
 #breadcrumbs {
-  background: green;
+  background: #d1d1d9;
 }
 #icons,
 #search {
@@ -21,16 +21,16 @@ body, html {
 #reports {
   float: left;
   width: 500px;
-  background: #9c9;
+  background: #adadaf;
 }
 
 #users,
 #charts {
   float: left;
   width: 250px;
-  background: #c9c;
+  background: #976e42;
 }
 
 #bandwidthused {
-  color: green;
+  color: #b2a698;
 }
