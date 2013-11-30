@@ -1,5 +1,5 @@
 """
-Django settings for control_panel project.
+Django settings for webpanel project.
 
 For more information on this file, see
 https://docs.djangoproject.com/en/1.6/topics/settings/
@@ -17,7 +17,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 # See https://docs.djangoproject.com/en/1.6/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'hx41ro%9vqbqz8i_0c%_tbr@wfwlo!mwv&jh)x5$n2y&a=x8-b'
+SECRET_KEY = 's=^#hww52st3(vt&3u)^j@l7@n!^hk1ku53-0@udz+a8zn-dt&'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -47,9 +47,9 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
 
-ROOT_URLCONF = 'control_panel.urls'
+ROOT_URLCONF = 'webpanel.urls'
 
-WSGI_APPLICATION = 'control_panel.wsgi.application'
+WSGI_APPLICATION = 'webpanel.wsgi.application'
 
 
 # Database
