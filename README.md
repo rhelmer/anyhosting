@@ -13,9 +13,9 @@ The rest of the directories in this repo are as follows:
 
 - blog
     - public AnyHosting blog http://anyhosting.com/blog
-- control_panel
+- control\_panel
     - Django Web Control Panel
 - mockups
-    - design concepts for control_panel
+    - design concepts for control\_panel
 - puppet
     - Puppet https://puppetlabs.com/ manifests for AnyHosting
