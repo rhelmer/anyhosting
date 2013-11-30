@@ -2,8 +2,8 @@
 # vi: set ft=ruby :
 
 Vagrant::Config.run do |config|
-  config.vm.box = "ubuntu-1204-cloud-i386"
-  config.vm.box_url = "http://cloud-images.ubuntu.com/precise/current/precise-server-cloudimg-vagrant-i386-disk1.box"
+  config.vm.box = "thinkstack-raring64.box"
+  config.vm.box_url = "https://dl.dropboxusercontent.com/u/547671/thinkstack-raring64.box"
 
   # Boot with a GUI so you can see the screen. (Default is headless)
   # config.vm.boot_mode = :gui
