@@ -19,3 +19,5 @@ The rest of the directories in this repo are as follows:
     - Puppet https://puppetlabs.com/ manifests for AnyHosting
 - webpanel
     - Django Web Control Panel
+- wrangler
+    - Celery worker for configuring Docker (using Shipper)
