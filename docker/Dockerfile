@@ -9,6 +9,6 @@ RUN apt-get install -y libapache2-mod-php5 phpmyadmin
 
 ADD supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 
-EXPOSE 80:8080 22
+EXPOSE 22:2222 80:8080
 
 CMD ["/usr/bin/supervisord"]
