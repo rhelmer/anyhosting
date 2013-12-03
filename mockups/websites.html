@@ -5,34 +5,40 @@
     <title>Websites</title>
   </head>
   <body>
-    <div id="breadcrumbs">
-      <a href="home.html">Home</a>
-      <a href="users.html">Users</a>
-      Websites
-      <a href="reports.html">Reports</a>
-    </div>
-    <div id="controls">
-      <div id="siteselector">
-        <select>
-          <option>ExampleOne.com</option>
-          <option selected>ExampleTwo.com</option>
-          <option>ExampleThree.com</option>
-        </select>
-        <button id="add">+</button>
-        <button id="remove">-</button>
+    <header>
+      <nav>
+        <a href="users.html">Users</a>
+        Websites
+        <a href="reports.html">Reports</a>
+      </nav>
+    </header>
+    <main>
+      <div id="controls">
+        Website:
+        <div id="siteselector">
+          <select>
+            <option>ExampleOne.com</option>
+            <option selected>ExampleTwo.com</option>
+            <option>ExampleThree.com</option>
+          </select>
+          <button id="add">+</button>
+          <button id="remove">-</button>
+        </div>
+        Aliases:
+        <div id="domainselector">
+          <select multiple size="5">
+            <option>www.ExampleOne.com</option>
+            <option>www.ExampleTwo.co.uk</option>
+            <option>...</option>
+          </select>
+          <button id="add">+</button>
+          <button id="remove">-</button>
+        </div>
+        <div id="sitecontrols">
+          <input type="checkbox">Enabled</input><br>
+        </div>
       </div>
-      <div id="domainselector">
-        <select multiple size="5">
-          <option>www.ExampleOne.com</option>
-          <option>www.ExampleTwo.co.uk</option>
-          <option>...</option>
-        </select>
-        <button id="add">+</button>
-        <button id="remove">-</button>
-      </div>
-      <div id="sitecontrols">
-        <input type="checkbox">Enabled</input><br>
-      </div>
-    </div>
+    </main>
+    <footer></footer>
   </body>
 </html>
