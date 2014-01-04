@@ -16,7 +16,7 @@ The rest of the directories in this repo are as follows:
 - mockups
     - design concepts for webpanel
 - puppet
-    - Puppet https://puppetlabs.com/ manifests for AnyHosting
+    - Puppet https://puppetlabs.com/ manifests for AnyHosting Vagrant
 - webpanel
     - Django Web Control Panel
 - wrangler
