@@ -40,7 +40,7 @@ exec {
 }
 
 package {
-    ["nginx", "linux-image-extra-3.8.0-19-generic"]:
+    ["nginx", "linux-image-extra-3.8.0-19-generic", "mysql-server"]:
         ensure => latest,
         require => Exec["apt-get-update"];
 
