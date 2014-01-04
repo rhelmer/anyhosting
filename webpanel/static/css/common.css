@@ -1,0 +1,60 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  color: #000;
+  background: #8ab5a2;
+  font: 1.1em arial,sans-serif;
+}
+nav {
+  font: 1.1em arial,sans-serif;
+}
+header {
+  background: linear-gradient(#888, #666) repeat scroll 0% 0% transparent;
+  width: 130px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.icon,
+#profile, 
+#controls,
+#bandwidth {
+  width: 260px;
+  background: #adadaf;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+#graph {
+  width: 250px;
+  background: #976e42;
+  padding: 5px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#bandwidthused {
+  color: white;
+}
+
+#files {
+  width: 260px;
+  background: #adadaf;
+  display: block;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#files > ul {
+  list-style: none;
+}
+
+#files li:hover {
+  border-radius: 2em;
+  color: white;
+  background-color: black;
+}

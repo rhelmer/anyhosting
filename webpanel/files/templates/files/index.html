@@ -1,0 +1,44 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/common.css' %}" /> 
+    <title>Files</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="reports">Reports</a>
+        Files
+      </nav>
+    </header>
+    <main>
+      <div id="files">
+        <form id="upload-form">
+          Upload file(s)
+          <input type="file" id="upload-file" multiple>
+          <input type="submit" value="OK">
+        </form>
+        <hr>
+          Create folder
+        <form id="createfolder-form">
+          <input type="text" id="create-folder" multiple>
+          <input type="submit" value="OK">
+        </form>
+        <hr>
+        Browse files
+        <br>
+        Location: <a href="/files">[htdocs]</a>
+        <ul>
+          {% for dir in dirs %}
+          <li><img src="{% static 'files/img/folder.png' %}"><a href="{{ link_path }}/{{ dir }}">{{ dir }}</a></li>
+          {% endfor %} 
+          {% for file in files %}
+          <li><img src="{% static 'files/img/text-html.png' %}"><a href="{{ link_path }}/{{ file }}">{{ file }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+    </main>
+    <footer></footer>
+  </body>
+</html>

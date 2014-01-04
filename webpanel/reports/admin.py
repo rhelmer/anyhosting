@@ -1,3 +1,5 @@
 from django.contrib import admin
+from reports.models import Bandwidth, Graph
 
-# Register your models here.
+admin.site.register(Bandwidth)
+admin.site.register(Graph)

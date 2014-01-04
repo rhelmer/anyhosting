@@ -1,0 +1,28 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/common.css' %}">
+    <title>Reports</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        Reports
+        <a href="files">Files</a>
+      </nav>
+    </header>
+    <main>
+      <section id="bandwidth">
+        <h3>example.com</h3>
+        Used {{ used }} GB of total ( {{ quota }} GB )
+      </section>
+      <section id="graph">
+        <img id="hits">Hits<br>
+        <img id="countries">Countries<br>
+      </section>
+    </main>
+  </body>
+</html>
+
