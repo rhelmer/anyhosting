@@ -5,30 +5,43 @@ body, html {
   background: #8ab5a2;
   font: 1.1em arial,sans-serif;
 }
+
+a {
+  text-decoration: none;
+}
+
 nav {
   font: 1.1em arial,sans-serif;
 }
+
 header {
+  padding: 10px;
   background: linear-gradient(#888, #666) repeat scroll 0% 0% transparent;
   width: 130px;
   display: block;
   margin-left: auto;
   margin-right: auto;
+  border: 2px solid black;
+  border-radius: 5px;
 }
-.icon,
-#profile, 
-#controls,
+
 #reports {
   width: 260px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   background: #adadaf;
   display: block;
   margin-left: auto;
   margin-right: auto;
+  border: 2px solid black;
+  border-radius: 10px;
 }
 
 
 #charts {
   width: 250px;
+  border: 2px solid black;
+  border-radius: 10px;
   background: #976e42;
   padding: 5px;
   display: block;
@@ -47,14 +60,80 @@ header {
   margin-top: 10px;
   margin-left: auto;
   margin-right: auto;
+  border: 2px solid black;
+  border-radius: 10px;
 }
 
-#files > ul {
+#files #location {
+  font-size: 15px;
+}
+
+#files ul {
   list-style: none;
+  padding: 5px;
 }
 
 #files li:hover {
-  border-radius: 2em;
-  color: white;
-  background-color: black;
+  border-radius: 0.3em;
+  background-color: white;
+  width: 100%;
+}
+
+#upload {
+  display: none;
+  padding: 20px;
+  border: 5px solid #154183;
+  border-radius: 10px;
+  background: none repeat scroll 0% 0% #FFF;
+  text-align: center;
+  z-index: 1;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 30%;
+  bottom: 30%;
+}
+
+#upload-button {
+  padding: 10px;
+  background: linear-gradient(#4B83C1, white) repeat scroll 0% 0% transparent;
+  font-size: 15px;
+  border-radius: 3px;
+}
+
+#upload-button:hover {
+  background: linear-gradient(white, #426CA6) repeat scroll 0% 0% transparent;
+  font-size: 15px;
+  border-radius: 3px;
+}
+
+#upload-file {
+  font-size: 15px;
+}
+
+#newfolder {
+  display: none;
+  padding: 40px;
+  border: 5px solid darkgreen;
+  border-radius: 15px;
+  background: none repeat scroll 0% 0% #FFF;
+  text-align: center;
+  z-index: 1;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 30%;
+  bottom: 30%;
+}
+
+#newfolder-button, #newfolder-ok, #upload-ok {
+  padding: 10px;
+  background: linear-gradient(#4B83C1, white) repeat scroll 0% 0% transparent;
+  font-size: 15px;
+  border-radius: 3px;
+  right: 0;
+}
+
+#newfolder-button:hover, #newfolder-ok:hover, #upload-ok:hover {
+  background: linear-gradient(white, #4B83C1) repeat scroll 0% 0% transparent;
 }

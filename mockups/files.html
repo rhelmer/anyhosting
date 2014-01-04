@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
     <link rel="stylesheet" type="text/css" href="common.css" /> 
     <title>Files</title>
   </head>
@@ -12,29 +14,39 @@
       </nav>
     </header>
     <main>
-      <div id="files">
+      <div id="upload"> 
         <form id="upload-form">
           Upload file(s)
           <input type="file" id="upload-file" multiple>
+          <hr>
+          <input type="submit" value="OK" id="upload-ok">
         </form>
-        <hr>
-          Create folder
-        <form id="createfolder-form">
-          <input type="text" id="create-folder" multiple>
-          <input type="submit" value="OK">
+      </div>
+      <div id="newfolder">
+        New folder name:
+        <form id="newfolder-form">
+          <input type="text" id="new-folder" multiple>
+          <hr>
+          <input type="submit" value="OK" id="newfolder-ok">
         </form>
-        <hr>
-        Browse files
-        <br>
-        Location: <a href="#">htdocs</a> / <a href="#">dir1</a> / 
+      </div>
+      <div id="files">
+        <div id="location">
+          <a href="#">[htdocs]</a> &gt; <a href="#">[dir1]</a>
+        </div>
         <ul>
-          <li><img src="images/text-html.png"><a href="#">File1.html</a></li>
-          <li><img src="images/text-html.png"><a href="#">File2.html</a></li>
           <li><img src="images/folder.png"><a href="#">Dir1</a></li>
           <li><img src="images/folder.png"><a href="#">Dir2</a></li>
+          <li><a href="#"><img src="images/text-html.png">File1.html</a></li>
+          <li><img src="images/text-html.png"><a href="#">File2.html</a></li>
         </ul>
+        <hr>
+        <button id="upload-button">Upload File(s)</button>
+        <button id="newfolder-button">New Folder</button>
       </div>
     </main>
     <footer></footer>
+    <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+    <script src="files.js"></script>
   </body>
 </html>
