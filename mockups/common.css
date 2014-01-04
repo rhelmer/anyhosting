@@ -10,7 +10,7 @@ nav {
 }
 header {
   background: linear-gradient(#888, #666) repeat scroll 0% 0% transparent;
-  width: 250px;
+  width: 290px;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -26,21 +26,6 @@ header {
   margin-right: auto;
 }
 
-#users {
-  width: 250px;
-  background: #976e42;
-  padding: 5px;
-  list-style: none;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#users li:hover {
-  border-radius: 2em;
-  color: white;
-  background-color: black;
-}
 
 #charts {
   width: 250px;
@@ -53,4 +38,23 @@ header {
 
 #bandwidthused {
   color: white;
+}
+
+#files {
+  width: 260px;
+  background: #adadaf;
+  display: block;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#files > ul {
+  list-style: none;
+}
+
+#files li:hover {
+  border-radius: 2em;
+  color: white;
+  background-color: black;
 }
