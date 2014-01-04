@@ -3,3 +3,4 @@
 *.pyc
 *.swp
 webpanel/webpanel/settings.py
+db.sqlite3
