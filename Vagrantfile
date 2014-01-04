@@ -8,6 +8,11 @@ Vagrant::Config.run do |config|
   # Boot with a GUI so you can see the screen. (Default is headless)
   # config.vm.boot_mode = :gui
 
+  MOUNT_POINT = '/home/vagrant/src/anyhosting'
+  config.vm.share_folder("vagrant-root", MOUNT_POINT, ".", :nfs => false)
+
+  config.vm.network :hostonly, "10.11.12.13"
+
   config.vm.provision :puppet do |puppet|
     puppet.manifests_path = "puppet/manifests"
     puppet.manifest_file = "init.pp"
