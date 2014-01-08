@@ -86,8 +86,8 @@ header {
   text-align: center;
   z-index: 1;
   position: absolute;
-  left: 20%;
-  right: 20%;
+  left: 5%;
+  right: 5%;
   top: 20%;
   bottom: 20%;
 }
@@ -118,8 +118,8 @@ header {
   text-align: center;
   z-index: 1;
   position: absolute;
-  left: 20%;
-  right: 20%;
+  left: 5%;
+  right: 5%;
   top: 20%;
   bottom: 20%;
 }
