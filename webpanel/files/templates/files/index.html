@@ -8,27 +8,34 @@
   <body>
     <header>
       <nav>
-        <a href="reports">Reports</a>
+        <a href="/reports">Reports</a>
         Files
       </nav>
     </header>
     <main>
-      <div id="files">
+      <div id="upload">
+        Upload file(s)
         <form id="upload-form">
-          Upload file(s)
           <input type="file" id="upload-file" multiple>
           <input type="submit" value="OK">
         </form>
-        <hr>
-          Create folder
+      </div>
+      <div id="newfolder">
+        New Folder
         <form id="createfolder-form">
           <input type="text" id="create-folder" multiple>
           <input type="submit" value="OK">
         </form>
-        <hr>
+      </div>
+      <div id="files">
         Browse files
         <br>
-        Location: <a href="/files">[htdocs]</a>
+        <div id="location">
+          Location: <a href="/files">[htdocs]</a>
+          {% for subdir in subdirs %}
+          / {{ subdir }}
+          {% endfor %}
+        </div>
         <ul>
           {% for dir in dirs %}
           <li><img src="{% static 'files/img/folder.png' %}"><a href="{{ link_path }}/{{ dir }}">{{ dir }}</a></li>
@@ -37,8 +44,13 @@
           <li><img src="{% static 'files/img/text-html.png' %}"><a href="{{ link_path }}/{{ file }}">{{ file }}</a></li>
           {% endfor %}
         </ul>
+        <hr>
+        <button id="upload-button">Upload File(s)</button>
+        <button id="newfolder-button">New Folder</button>
       </div>
     </main>
     <footer></footer>
+    <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+    <script src="{% static 'files/js/files.js' %}"></script> 
   </body>
 </html>

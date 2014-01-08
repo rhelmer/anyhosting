@@ -16,10 +16,14 @@ def index(request, path=''):
 
     link_path = '/files'
 
+    subdirs = []
+
     if path != '':
         # validate path info
         path = path.strip('/')
         path = path.replace('\0', '')
+
+        subdirs = path.split('/')
 
         link_path += '/%s' % path
         abs_path = os.path.join(settings.BASE_DIR, docroot, path)
@@ -52,5 +56,6 @@ def index(request, path=''):
         'link_path': link_path,
         'files': files,
         'dirs': dirs,
+        'subdirs': subdirs,
     })
     return HttpResponse(template.render(context))
