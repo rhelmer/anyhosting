@@ -88,10 +88,10 @@ header {
   text-align: center;
   z-index: 1;
   position: absolute;
-  left: 0;
-  right: 0;
-  top: 30%;
-  bottom: 30%;
+  left: 20%;
+  right: 20%;
+  top: 20%;
+  bottom: 20%;
 }
 
 #upload-button {
@@ -120,10 +120,10 @@ header {
   text-align: center;
   z-index: 1;
   position: absolute;
-  left: 0;
-  right: 0;
-  top: 30%;
-  bottom: 30%;
+  left: 20%;
+  right: 20%;
+  top: 20%;
+  bottom: 20%;
 }
 
 #newfolder-button, #newfolder-ok, #upload-ok {
