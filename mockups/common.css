@@ -1,6 +1,4 @@
 body, html {
-  margin: 0;
-  padding: 0;
   color: #000;
   background: #8ab5a2;
   font: 1.1em arial,sans-serif;
@@ -83,7 +81,7 @@ header {
   display: none;
   padding: 20px;
   border: 5px solid #154183;
-  border-radius: 10px;
+  border-radius: 30px;
   background: none repeat scroll 0% 0% #FFF;
   text-align: center;
   z-index: 1;
@@ -115,7 +113,7 @@ header {
   display: none;
   padding: 40px;
   border: 5px solid darkgreen;
-  border-radius: 15px;
+  border-radius: 30px;
   background: none repeat scroll 0% 0% #FFF;
   text-align: center;
   z-index: 1;
@@ -139,22 +137,22 @@ header {
 }
 
 .close-button {
-    top: -13px;
-    right: -10px;
+    top: -12px;
+    right: -12px;
     position: absolute;
     cursor: pointer;
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
     border: 1px solid #000000;
-    border-radius: 12px;
+    border-radius: 30px;
     box-shadow: 3px 3px 3px #999999;
-    background-color: #000000;
+    background-color: black;
     overflow: visible;
 }
 
 .inner-close-button {
     text-align: center;
-    font-size: 19px;
+    font-size: 22px;
     line-height: 19px;
     font-weight: bold;
     color: #ffffff;
