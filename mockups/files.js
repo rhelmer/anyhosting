@@ -7,6 +7,10 @@ $(document).ready(function() {
         $('#upload').hide();
         $('#newfolder').fadeToggle();
     });
+    $('.close-button').click(function() {
+        $('#upload').fadeOut();
+        $('#newfolder').fadeOut();
+    })
     $('#upload-ok').click(function(event) {
         event.preventDefault();
         $('#upload').fadeOut();

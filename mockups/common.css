@@ -137,3 +137,34 @@ header {
 #newfolder-button:hover, #newfolder-ok:hover, #upload-ok:hover {
   background: linear-gradient(white, #4B83C1) repeat scroll 0% 0% transparent;
 }
+
+.close-button {
+    top: -13px;
+    right: -10px;
+    position: absolute;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #000000;
+    border-radius: 12px;
+    box-shadow: 3px 3px 3px #999999;
+    background-color: #000000;
+    overflow: visible;
+}
+
+.inner-close-button {
+    text-align: center;
+    font-size: 19px;
+    line-height: 19px;
+    font-weight: bold;
+    color: #ffffff;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -10px;
+    margin-left: -10px;
+    font-family: arial, sans-serif;
+    padding-top: 0px;
+}
