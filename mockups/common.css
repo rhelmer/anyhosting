@@ -80,7 +80,7 @@ header {
 #upload {
   display: none;
   padding: 20px;
-  border: 5px solid #154183;
+  border: 5px solid darkgreen;
   border-radius: 30px;
   background: none repeat scroll 0% 0% #FFF;
   text-align: center;
