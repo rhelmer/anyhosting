@@ -24,7 +24,7 @@ header {
 }
 
 #reports {
-  width: 260px;
+  width: 60%;
   margin-top: 20px;
   margin-bottom: 20px;
   background: #adadaf;
@@ -33,11 +33,12 @@ header {
   margin-right: auto;
   border: 2px solid black;
   border-radius: 10px;
+  padding: 5%;
 }
 
 
 #charts {
-  width: 250px;
+  width: 60%;
   border: 2px solid black;
   border-radius: 10px;
   background: #976e42;
@@ -45,6 +46,7 @@ header {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
 }
 
 #bandwidthused {
