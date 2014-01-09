@@ -38,6 +38,7 @@ header {
 
 
 #charts {
+  min-width: 768px;
   width: 60%;
   border: 2px solid black;
   border-radius: 10px;
@@ -49,8 +50,12 @@ header {
   text-align: center;
 }
 
-#bandwidthused {
-  color: white;
+#bandwidth-ok, #disk-ok {
+  color: darkgreen;
+}
+
+#bandwidth-over, #disk-over {
+  color: darkred;
 }
 
 #files {
@@ -71,6 +76,14 @@ header {
 #files ul {
   list-style: none;
   padding: 5px;
+}
+
+#files li:nth-child(odd) {
+  background-color: #ccc;
+}
+
+#files li:nth-child(even) {
+  background-color: #ddd;
 }
 
 #upload {
