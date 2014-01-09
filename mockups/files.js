@@ -1,4 +1,6 @@
 $(document).ready(function() {
+    $('li:odd').css('background-color', '#ccc');
+    $('li:even').css('background-color', '#ddd');
     $('#upload-button').click(function() {
         $('html,body').css('background-color', 'grey');
         $('#newfolder').hide();
