@@ -11,7 +11,7 @@ based on the latest AnyHosting setup (which is basically nginx+php-fpm
 in front, and proxying to Docker_ instances where something more custom
 is needed).
 
-I've pushed everything that I am currently working on, including mockups
+I've pushed everything that I am currently working on, including mockups_
 (and even this blog!) to the `anyhosting repo`_ on my github account.
 NOTE - most things aren't functional yet, I am just working on it in the
 open.
@@ -33,7 +33,7 @@ or pull request on the `anyhosting repo`_ or email me (rhelmer@anyhosting.com)
 .. _Docker: http://docker.io/
 .. _`anyhosting repo`: https://github.com/rhelmer/anyhosting
 .. _webpanel: https://github.com/rhelmer/anyhosting/tree/master/webpanel
-.. _mockups: https://github.com/rhelmer/anyhosting/tree/master/mockups
+.. _mockups: http://rhelmer.github.io/anyhosting/mockups/reports.html 
 .. _wrangler: https://github.com/rhelmer/anyhosting/tree/master/wrangler
 .. _Celery: http://r.duckduckgo.com/l/?kh=-1&uddg=http%3A%2F%2Fwww.celeryproject.org%2F
 .. _Shipper: https://github.com/mailgun/shipper
