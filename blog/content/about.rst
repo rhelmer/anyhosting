@@ -4,4 +4,6 @@ About
 :author: Robert Helmer
 :category: about
 
-AnyHosting - Open Source Web Hosting
+AnyHosting_ - Open Source Web Hosting
+
+.. _AnyHosting: http://anyhosting.com
