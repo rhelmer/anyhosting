@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
         <meta charset="utf-8" />
-        <title>A Pelican Blog</title>
+        <title>A Pelican Blog - web hosting, control panel, github, open source</title>
         <link rel="stylesheet" href="/theme/css/main.css" />
         <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="A Pelican Blog Atom Feed" />
 
@@ -16,7 +16,7 @@
                 <h1><a href="/">A Pelican Blog </a></h1>
                 <nav><ul>
                     <li><a href="/category/about.html">about</a></li>
-                    <li><a href="/category/web-hosting.html">web hosting</a></li>
+                    <li class="active"><a href="/category/web-hosting-control-panel-github-open-source.html">web hosting, control panel, github, open source</a></li>
                 </ul></nav>
         </header><!-- /#banner -->
 
@@ -31,8 +31,8 @@
         <address class="vcard author">
                 By <a class="url fn" href="/author/robert-helmer.html">Robert Helmer</a>
         </address>
-<p>In <a href="/category/web-hosting.html">web hosting</a>. </p>
-<p>tags: <a href="/tag/web-hosting.html">web hosting</a><a href="/tag/control-panel.html">control panel</a><a href="/tag/github.html">github</a><a href="/tag/open-source.html">open source</a></p>
+<p>In <a href="/category/web-hosting-control-panel-github-open-source.html">web hosting, control panel, github, open source</a>. </p>
+
 </footer><!-- /.post-info --><p>A few years ago I <a class="reference external" href="http://anyhosting.com/blog/2010/03/18/new-open-source-web-hosting-control-panel/">mentioned</a> that I was working on an open-source
 web hosting control panel, and I have recently picked this back up
 based on the latest AnyHosting setup (which is basically nginx+php-fpm
@@ -44,43 +44,15 @@ NOTE - most things aren't functional yet, I am just working on it in the
 open.</p>
 <p>The basic architecture is that there is a Django application in the
 <a class="reference external" href="https://github.com/rhelmer/anyhosting/tree/master/webpanel">webpanel</a> directory with two apps - Files and Reports. Files is a file
-management application, and Reports gives a basic resource utilization
-report for a given website.</p>
-<p>There will be an administrative app for creating/destroying sites which
-puts messages in RabbitMQ for the <a class="reference external" href="https://github.com/rhelmer/anyhosting/tree/master/wrangler">wrangler</a> application. Wrangler is a
-<a class="reference external" href="http://r.duckduckgo.com/l/?kh=-1&amp;uddg=http%3A%2F%2Fwww.celeryproject.org%2F">Celery</a> worker which creates nginx virtual hosts, and populates
-Docker instances using <a class="reference external" href="https://github.com/mailgun/shipper">Shipper</a>.</p>
+management application, and reports gives a basic resource utilization
+report for a website.</p>
+<p>The Django app will have an administrative app which puts messages in
+RabbitMQ for the <a class="reference external" href="https://github.com/rhelmer/anyhosting/tree/master/wrangler">wrangler</a> application. Wrangler is a <a class="reference external" href="http://r.duckduckgo.com/l/?kh=-1&amp;uddg=http%3A%2F%2Fwww.celeryproject.org%2F">Celery</a> worker
+which creates and populates Docker instances using <a class="reference external" href="https://github.com/mailgun/shipper">Shipper</a>.</p>
 <p>If you're interested in helping out, now's a great time - open an issue
 or pull request on the <a class="reference external" href="https://github.com/rhelmer/anyhosting">anyhosting repo</a> or email me (<a class="reference external" href="mailto:rhelmer&#64;anyhosting.com">rhelmer&#64;anyhosting.com</a>)</p>
                 </article>
             </aside><!-- /#featured -->
-                <section id="content" class="body">
-                    <h1>Other articles</h1>
-                    <hr />
-                    <ol id="posts-list" class="hfeed">
-
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="/about.html" rel="bookmark"
-                           title="Permalink to About">About</a></h1>
-                </header>
-
-                <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2013-12-02T02:43:00">
-                Mon 02 December 2013
-        </abbr>
-
-        <address class="vcard author">
-                By <a class="url fn" href="/author/robert-helmer.html">Robert Helmer</a>
-        </address>
-<p>In <a href="/category/about.html">about</a>. </p>
-
-</footer><!-- /.post-info -->                <p>AnyHosting - Open Source Web Hosting</p>
-
-                <a class="readmore" href="/about.html">read more</a>
-                </div><!-- /.entry-content -->
-            </article></li>
             </ol><!-- /#posts-list -->
             </section><!-- /#content -->
         <section id="extras" class="body">

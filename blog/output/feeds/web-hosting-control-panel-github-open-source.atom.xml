@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>A Pelican Blog</title><link href="/" rel="alternate"></link><link href="/feeds/web-hosting-control-panel-github-open-source.atom.xml" rel="self"></link><id>/</id><updated>2014-04-13T10:24:00Z</updated><entry><title>Open Source Web Hosting Control Panel Now On Github</title><link href="/open-source-web-hosting-control-panel-now-on-github.html" rel="alternate"></link><updated>2014-04-13T10:24:00Z</updated><author><name>Robert Helmer</name></author><id>tag:,2014-04-13:open-source-web-hosting-control-panel-now-on-github.html</id><summary type="html">&lt;p&gt;A few years ago I &lt;a class="reference external" href="http://anyhosting.com/blog/2010/03/18/new-open-source-web-hosting-control-panel/"&gt;mentioned&lt;/a&gt; that I was working on an open-source
+web hosting control panel, and I have recently picked this back up
+based on the latest AnyHosting setup (which is basically nginx+php-fpm
+in front, and proxying to &lt;a class="reference external" href="http://docker.io/"&gt;Docker&lt;/a&gt; instances where something more custom
+is needed).&lt;/p&gt;
+&lt;p&gt;I've pushed everything that I am currently working on, including mockups
+(and even this blog!) to the &lt;a class="reference external" href="https://github.com/rhelmer/anyhosting"&gt;anyhosting repo&lt;/a&gt; on my github account.
+NOTE - most things aren't functional yet, I am just working on it in the
+open.&lt;/p&gt;
+&lt;p&gt;The basic architecture is that there is a Django application in the
+&lt;a class="reference external" href="https://github.com/rhelmer/anyhosting/tree/master/webpanel"&gt;webpanel&lt;/a&gt; directory with two apps - Files and Reports. Files is a file
+management application, and reports gives a basic resource utilization
+report for a website.&lt;/p&gt;
+&lt;p&gt;The Django app will have an administrative app which puts messages in
+RabbitMQ for the &lt;a class="reference external" href="https://github.com/rhelmer/anyhosting/tree/master/wrangler"&gt;wrangler&lt;/a&gt; application. Wrangler is a &lt;a class="reference external" href="http://r.duckduckgo.com/l/?kh=-1&amp;amp;uddg=http%3A%2F%2Fwww.celeryproject.org%2F"&gt;Celery&lt;/a&gt; worker
+which creates and populates Docker instances using &lt;a class="reference external" href="https://github.com/mailgun/shipper"&gt;Shipper&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;If you're interested in helping out, now's a great time - open an issue
+or pull request on the &lt;a class="reference external" href="https://github.com/rhelmer/anyhosting"&gt;anyhosting repo&lt;/a&gt; or email me (&lt;a class="reference external" href="mailto:rhelmer&amp;#64;anyhosting.com"&gt;rhelmer&amp;#64;anyhosting.com&lt;/a&gt;)&lt;/p&gt;
+</summary></entry></feed>
